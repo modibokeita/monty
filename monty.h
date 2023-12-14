@@ -88,8 +88,8 @@ void (*find_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 /*imported functions*/
 int _strch(char *s, char c);
 char *_str_tok(char *s, char *d);
-void *_realloc(void *p, unsigned int oldsize, unsigned int newsize);
-void *_calloc(unsigned int member, unsigned int nsize);
+void *re_alloc(void *ptr, unsigned int oldsize, unsigned int newsize);
+void *ca_lloc(unsigned int member, unsigned int nsize);
 int _str_cmp(char *str1, char *str2);
 
 /* doubly linked list functions */
@@ -98,6 +98,6 @@ stack_t *_addnodeint(stack_t **head, const int n);
 void _freelistint(stack_t *head);
 
 /* main */
-void free_vglo(void);
+void _freeglo(void);
 
 #endif
